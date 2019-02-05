@@ -6,7 +6,7 @@ namespace Prime_Number
     {
         static void Main(string[] args)
         {
-            long NumberInt,Result,Index=0;
+            long numberInt,result,index=0;
 
             System.Console.WriteLine("         ========================SHOW PRIME NUMBER========================");
 
@@ -15,18 +15,18 @@ namespace Prime_Number
             System.Console.Write
                 ("Please Enter Number: ");
 
-            NumberInt=System.Convert.ToInt64
+            numberInt=System.Convert.ToInt64
                 (System.Console.ReadLine());
 
             System.Console.WriteLine();
 
-            for (int i = 1; i <= NumberInt; i++)
+            for (int i = 1; i <= numberInt; i++)
             {
-                Result = NumberInt % i;
+                result = numberInt % i;
 
-                if (Result==0)
+                if (result==0)
                 {
-                    Index=Index+1;
+                    index=index+1;
 
                     System.Console.WriteLine("Separable is:" + i);
 
@@ -35,11 +35,11 @@ namespace Prime_Number
 
             }
 
-            if (Index > 2)
+            if (index > 2)
             {
 
                 System.Console.WriteLine
-                    ("The number " + NumberInt + " is not Prime Number");
+                    ("The number " + numberInt + " is not Prime Number");
 
                 System.Console.WriteLine();
             }
@@ -47,13 +47,11 @@ namespace Prime_Number
             {
 
                 System.Console.WriteLine
-                    ("The number " + NumberInt + " is Prime Number");
+                    ("The number " + numberInt + " is Prime Number");
 
                 System.Console.WriteLine();
 
-            }
-
-            
+            }           
 
             System.Console.Write
                 ("Please [ENTER] To Exit... ");
